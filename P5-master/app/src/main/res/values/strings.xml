@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">WorkUp</string>
+    <string name="username">username</string>
+    <string name="chatName">chatName</string>
+    <string name="groups">Groups</string>
+    <string name="instructions">Place your fingertip on the Home button to verify your identity</string>
+    <string name="search_contacts">Search Contacts</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="forgot_password">"Forgot password"</string>
+    <string name="sign_up_name">"Sign up"</string>
+    <string name="button_done">Done</string>
+
+    <string name="send_message">Send Message</string>
+    <string name="last_seen_time">Last Seen on: </string>
+    <string name="hi_how_are_you">Hi, How are you?</string>
+    <string name="no_messages">There are no messages</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_new_user">Register new User</string>
+    <string name="back">Back</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="i_agree_to">I agree to the</string>
+    <string name="terms_and_cond">Terms</string>
+    <string name="privacy_poli">Privacy Policy</string>
+    <string name="and">and</string>
+    <string name="Continue">Continue</string>
+    <string name="have_an_account">Have an Account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="your_password_should_be_minimum_10_characters_with_one_upper_case_numbers_and_special_chars_i_e">Your password should be minimum 10 characters, with at least one upper case, one number and one special chars, i.e @ # $ % ^ *…</string>
+    <string name="aa">Aa</string>
+    <string name="phone_number">Phone number</string>
+    <string name="enter_your_received_pin_number">Your received code</string>
+    <string name="validate">Validate</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_user">Confirm your phone number</string>
+    <string name="name_and_surname">Name and surname</string>
+    <string name="private_phone_number">Private Phone number</string>
+
+    <string name="request_password">Request a new password</string>
+    <string name="we_send_password">We send a password to your email, check your email please</string>
+
+    //recaptcha
+    <!--    <string name="recaptcha_pubKey">6LfDPNYZAAAAAG5PSrpC_K6u-bBwI25guKxrKiKg</string>-->
+
+
+    <string name="timestamp_pattern">yyyy-MM-dd__HH:mm:ss</string>
+    <string name="latest_message">latest message</string>
+
+    <!--Firebase Database fields -->
+    <string name="dbname_users">users</string>
+    <string name="dbname_messages">messages</string>
+    <string name="dbname_chats">chats</string>
+    <string name="dbname_logs">logs</string>
+
+    <!--Firebase Database User -->
+    <string name="field_user_id">userId</string>
+    <string name="field_name">name</string>
+    <string name="field_email">email</string>
+    <string name="field_phone">phone</string>
+    <string name="field_profile_url">profileUrl</string>
+    <string name="field_status">status</string>
+
+    <!--Firebase Database Message -->
+    <string name="field_sender_id">senderId</string>
+    <string name="field_receivers">receivers</string>
+    <string name="field_message_id">messageId</string>
+    <string name="field_content">content</string>
+    <string name="field_timeStamp">timeStamp</string>
+    <string name="field_url_attached">urlAttached</string>
+
+    <!--Firebase Database Chat -->
+    <string name="field_chat_id">chatId</string>
+    <string name="field_group_name">groupName</string>
+
+    <!--Firebase Database Dao_Log -->
+    <string name="field_joined">joined</string>
+    <string name="field_left">left</string>
+
+    <!--    last seen day of the week-->
+    <string name="yesterday">Yesterday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <!--    Message dialog-->
+    <string name="what_todo_message">What to do?</string>
+    <string name="dialog_title_message">Title?</string>
+    <string name="copied_to_clipboard">Text copied to clipboard</string>
+    <string name="dialog_copy">Copy</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_edit">Edit</string>
+    <string name="dialog_forward">Forward</string>
+    <string name="dialog_reply">Reply</string>
+    <string name="settings">settings</string>
+    <string name="phone_verification_in_progress">Phone verification</string>
+    <string name="send">Send</string>
+    <string name="click_on_the_image_to_open_camera">click on the image to open Camera</string>
+    <string name="change_name_for_conversation">Change name for Conversation</string>
+    <string name="leave_conversation">Leave the conversation</string>
+    <string name="sure_leave_conversation">Are you sure?</string>
+    <string name="no_group_creation">Cannot make a group without any members</string>
+    <!--    Group creation and message handling-->
+    <string name="group_successfully_created">Group successfully created</string>
+    <string name="groupOrMessage_unsuccessful_validation">User is not approved.</string>
+    <string name="mess_success_delete">Message successfully deleted</string>
+    <string name="mess_success_add">Message successfully added</string>
+
+    <string name="no_mess_in_chat">There are no messages in the chat.</string>
+    <string name="could_not_retrieve_chat">Could not retrieve the chat.</string>
+    <string name="no_message_yet">No Messages Yet</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="check_message_box">Check message box</string>
+    <string name="message_sent_successfully">Message has been successfully sent</string>
+    <string name="chat_successfully_renamed">Chat name has been successfully changed</string>
+    <string name="chat_successfully_left">You have successfully left the chat</string>
+    <string name="check_inbox">Please check your inbox, we sent you a change password link</string>
+    <string name="request_delete_account">Request to delete account has been sent</string>
+
+    <!--    <string name="recaptcha_pubKey">6LfDPNYZAAAAAG5PSrpC_K6u-bBwI25guKxrKiKg</string>-->
+</resources>

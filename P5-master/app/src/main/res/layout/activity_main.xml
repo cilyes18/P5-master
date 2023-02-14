@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_notApproved_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView_not_approved_text"
+            android:text="Not Approved user. Awaiting confirmation..."
+            style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/activity_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--    top-->
+        <LinearLayout
+            android:id="@+id/top_message_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/message_layout_top" />
+        </LinearLayout>
+
+        <!--    search_contacts-->
+        <LinearLayout
+            android:id="@+id/send_message_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/top_message_bar">
+
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:padding="2dp"
+                android:src="@drawable/search_contact" />
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:gravity="start|center"
+                android:hint="@string/search_contacts"
+                android:inputType="textMultiLine"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/contacts_list"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/search_contacts"
+            android:src="@drawable/search_contact" />
+
+        <!--    listview-->
+        <ListView
+            android:id="@+id/contacts_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/send_message_bar"
+            android:padding="10dp" />
+    </RelativeLayout>
+</FrameLayout>
+

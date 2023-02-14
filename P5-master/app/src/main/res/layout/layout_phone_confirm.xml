@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/eText_codeField"
+            android:background="@drawable/background_white_round_edge"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:layout_marginEnd="?actionBarSize"
+            android:layout_marginStart="?actionBarSize"
+            android:hint="@string/enter_your_received_pin_number"
+            android:layout_height="wrap_content">
+        </EditText>
+
+
+        <Button
+            android:id="@+id/button_phone_pin_confirm"
+            android:layout_below="@id/eText_codeField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/validate"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+    </RelativeLayout>
+</LinearLayout>

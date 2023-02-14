@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".one_time_act.PhoneVerifyActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_oneTimeProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="?actionBarSize"
+            android:clickable="true"
+            android:focusable="true"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            android:onClick="onClick"
+            android:padding="5dp"
+            android:src="@mipmap/ic_launcher_round">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <EditText
+            android:id="@+id/eText_oneTimeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_oneTimeProfile"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:autofillHints="@null"
+            android:background="@drawable/background_white_round_edge"
+            android:hint="@string/name_and_surname"
+            android:inputType="textPersonName"
+            android:maxEms="16"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/button_oneTime_send_name_picture"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eText_oneTimeName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/send"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textAllCaps="false"
+            app:button_background="@drawable/background_blue_round_edge"
+            app:button_bottom_padding="5dp"
+            app:button_image_disabled="@drawable/arrow_to_right_swipe"
+            app:button_image_enabled="@drawable/icone_done"
+            app:button_left_padding="5dp"
+            app:button_right_padding="5dp"
+            app:button_top_padding="5dp"
+            app:inner_text="Swipe to confirm"
+            app:inner_text_background="@color/colorWhite"
+            app:inner_text_color="@color/blueBalls"
+            app:inner_text_size="16sp">
+
+        </com.ebanx.swipebtn.SwipeButton>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

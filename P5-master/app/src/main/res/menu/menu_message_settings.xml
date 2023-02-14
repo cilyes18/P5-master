@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:showAsAction="ifRoom"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/change_name_for_conversation"
+        android:title="@string/change_name_for_conversation"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/leave_conversation"
+        android:title="@string/leave_conversation"
+        app:showAsAction="never" />
+</menu>

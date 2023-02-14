@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.prototype1">
+
+    <!-- Used for android for 28 or bigger for biometrics (fingerprint/face etc.) -->
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- Used for android under 28 for fingerprint -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- getting the wifi state permission -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Include following permission if you want to cache images on SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Include following permission if you want to get images from SD card -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Include following permission if you want to read anything from storage -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- Include following permission if you want to read anything from storage -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Include following permission if you want to read anything from storage -->
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize|adjustPan">
+
+        <activity android:name="com.example.prototype1.one_time_act.PhoneVerifyActivity">
+
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name=".user_profile.UserProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+
+<!--        <service-->
+<!--            android:name=".java.MyFirebaseMessagingService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+        <!-- face detection ML model>> recommended by Google -->
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="face" />
+    </application>
+
+</manifest>
